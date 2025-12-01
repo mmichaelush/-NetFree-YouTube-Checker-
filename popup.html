@@ -16,6 +16,7 @@
     </header>
 
     <main class="main">
+      <!-- סטטוס ופרוגרס בר -->
       <section class="card card-status">
         <div class="status-row">
           <span class="status-label">סטטוס:</span>
@@ -31,6 +32,7 @@
         </div>
       </section>
 
+      <!-- סיכום מספרים -->
       <section class="card card-summary">
         <div class="summary-item">
           <div class="summary-label">נמצאו בעמוד</div>
@@ -54,6 +56,23 @@
         </div>
       </section>
 
+      <!-- כפתורי פעולה (הועבר לכאן) -->
+      <section class="card card-actions">
+        <div class="action-buttons">
+          <button id="rescanBtn" class="btn btn-primary">
+            הפעל סריקה מחדש
+          </button>
+          <button id="retryErrorsBtn" class="btn btn-secondary" disabled>
+            בדוק שוב שגיאות
+          </button>
+          <button id="openWindowBtn" class="btn btn-secondary">
+            פתח בחלון קבוע
+          </button>
+        </div>
+        <div id="errorBox" class="error-box" hidden></div>
+      </section>
+
+      <!-- רשימות הסרטונים -->
       <section class="lists-container">
         <div class="card list-card">
           <div class="list-header">
@@ -136,20 +155,6 @@
         </div>
       </section>
 
-      <section class="card card-footer">
-        <div class="footer-buttons">
-          <button id="rescanBtn" class="btn btn-primary">
-            הפעל סריקה מחדש
-          </button>
-          <button id="retryErrorsBtn" class="btn btn-secondary" disabled>
-            בדוק שוב סרטונים עם שגיאות
-          </button>
-          <button id="openWindowBtn" class="btn btn-secondary">
-            פתח בחלון קבוע
-          </button>
-        </div>
-        <div id="errorBox" class="error-box" hidden></div>
-      </section>
     </main>
   </div>
 
